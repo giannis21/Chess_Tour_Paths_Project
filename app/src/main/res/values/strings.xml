@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chess Tour Paths</string>
+    <string name="overview">Ο αλγόριθμος που έφτιαξα λειτουργεί για τρεις κινήσεις και δεν του έχω βάλει περιορισμό να μην μπορεί να περάσει απο τα
+    ίδια σημεία.Δηλαδή εκεί που μπορεί να κάνει τρεις κινήσεις θα τις κάνει ακόμα και αν οι γειτονικοί κόμβοι να είναι δίπλα.</string>
+    <string name="reset">RESET</string>
+    <string name="find_paths">find paths</string>
+    <string name="no_paths_found">No paths found</string>
+
+
+
+
+</resources>
