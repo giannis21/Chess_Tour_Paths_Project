@@ -1,40 +1,30 @@
 package com.example.chessproject_java;
 
 
+import java.util.ArrayList;
 
 public class Coordinates {
     int x,y;
     private int numOfchildren;
     private Coordinates parent;
+    private ArrayList<String>  neighboors;
     public Coordinates(int x, int y, Coordinates parentNode) {
         this.x = x;
         this.y = y;
         parent=parentNode;
-
+        neighboors=new ArrayList<>();
     }
 
     private Coordinates getParent() {
         return parent;
     }
 
-    public void setParent(Coordinates parent) {
-        this.parent = parent;
+    public ArrayList<String>  getNeighboors() {
+        return neighboors;
     }
 
-    public int getNumOfchildren() {
-        return numOfchildren;
-    }
-
-    public void setNumOfchildren(int numOfchildren) {
-        this.numOfchildren = numOfchildren;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
+    public void setNeighboors(ArrayList<String> neighboors) {
+        this.neighboors = neighboors;
     }
 
     @Override
@@ -50,4 +40,5 @@ public class Coordinates {
         return    x + "," + y +"-"+getParent();
 
     }
+
 }
