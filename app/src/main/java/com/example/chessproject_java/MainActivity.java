@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!((startPointX - 1) == (Integer.parseInt(tagX)-1) &&  (startPointY - 1) == (Integer.parseInt(tagY)-1)
                 || (endPointX - 1) == (Integer.parseInt(tagX)-1) &&  (endPointY - 1) == (Integer.parseInt(tagY)-1)))
                  b1.setText(getString(R.string.coordinates, (Integer.parseInt(tagX)-1),(Integer.parseInt(tagY)-1)));
-
+                b1.setTextSize(17F);
                 b1.setTextColor(getResources().getColor(R.color.red));
 
             }
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     twoSelectedPoint.add(row+","+col);
                     b1.setTextColor(getResources().getColor(R.color.red));
                     b1.setBackgroundColor(getResources().getColor(R.color.lightblue));
-                    b1.setTextSize(18F);
+                    b1.setTextSize(17F);
                 } else if (Click_Times == 2) {
                     twoSelectedPoint.add(row+","+col);
                     if(twoSelectedPoint.get(0).equals(twoSelectedPoint.get(1))) {
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                         twoSelectedPoint.clear();
 
                         Log.i("Main","startX="+startPointX+"startPointY="+startPointY+"---endPointX="+endPointX+" endpointY="+endPointY);
-                        b1.setTextSize(18F);
+                        b1.setTextSize(17F);
                         b1.setTextColor(getResources().getColor(R.color.red));
                         b1.setBackgroundColor(getResources().getColor(R.color.lightblue));
                         twoSelectedPoint.clear();
