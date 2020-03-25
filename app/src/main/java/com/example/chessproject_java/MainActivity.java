@@ -268,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
         neighboorsCoord.clear();
         final_listWithNeighboors.clear();
         twoSelectedPoint.clear();
+        startPointX=-1; startPointY=-1; endPointY=-1; endPointX=-1;
     }
 
     private void setChessColors(int chessRow, Button b1) {
